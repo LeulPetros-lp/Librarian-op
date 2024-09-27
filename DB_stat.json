@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "_id": "66607279b21e9a95272af047",
+            "name": "Micha Enderson",
+            "age": 19,
+            "book": "Lost Girls (Expanded Edition)",
+            "grade": "12",
+            "section": "A",
+            "duration": "2 weeks",
+            "__v": 0
+        },
+        {
+            "_id": "66612686e4914ff8ea6eb510",
+            "name": "Leul Petros",
+            "age": 14,
+            "book": "To Kill a Mockingbird",
+            "grade": "9",
+            "section": "B",
+            "duration": "1 week",
+            "__v": 0
+        },
+        {
+            "_id": "66627544c28e29e9f9bf18d6",
+            "name": "Alexandra Wilkies ",
+            "age": 15,
+            "book": "A Tale of Two Cities",
+            "grade": "9",
+            "section": "A",
+            "duration": "3 days",
+            "__v": 0
+        },
+        {
+            "_id": "6666708c1404289623e4feb0",
+            "name": "Bob Michel ",
+            "book": "dfsdfsdf",
+            "section": "b",
+            "grade": "7",
+            "duration": "2 weeks"
+        }
+    ]
+}

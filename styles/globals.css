@@ -11,3 +11,9 @@ body {
 * {
   box-sizing: border-box;
 }
+
+input::placeholder {
+  color: #999999; /* Placeholder text color */
+  line-height: normal; /* Adjust line-height if necessary */
+  padding-top: 10; /* Ensure no top padding affects alignment */
+}

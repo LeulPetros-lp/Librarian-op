@@ -3,12 +3,12 @@ import Chart, { Props } from "react-apexcharts";
 
 const state: Props["series"] = [
   {
-    name: "Series1",
-    data: [31, 40, 28, 51, 42, 109, 100],
+    name: "Borrowed",
+    data: [5,6,7,8,6,0,0],
   },
   {
-    name: "Series2",
-    data: [11, 32, 45, 32, 34, 52, 41],
+    name: "Red Zone",
+    data: [2,5,3,4,6,0,0],
   },
 ];
 
@@ -34,9 +34,8 @@ const options: Props["options"] = {
   },
 
   xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+    categories: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday", "Sunday"],
     labels: {
-      // show: false,
       style: {
         colors: "hsl(var(--nextui-default-800))",
       },
@@ -51,7 +50,6 @@ const options: Props["options"] = {
   yaxis: {
     labels: {
       style: {
-        // hsl(var(--nextui-content1-foreground))
         colors: "hsl(var(--nextui-default-800))",
       },
     },
@@ -67,10 +65,9 @@ const options: Props["options"] = {
   },
   stroke: {
     curve: "smooth",
-    fill: {
-      colors: ["red"],
-    },
   },
+  // Define colors for each series
+  colors: ["#00CA51", "#FE0707"],
   // @ts-ignore
   markers: false,
 };

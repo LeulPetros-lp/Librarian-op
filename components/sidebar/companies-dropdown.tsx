@@ -19,9 +19,9 @@ interface Company {
 
 export const CompaniesDropdown = () => {
   const [company, setCompany] = useState<Company>({
-    name: "Acme Co.",
-    location: "Palo Alto, CA",
-    logo: <AcmeIcon />,
+    name: "🌍 OnePlanet  -LMS",
+    location: "  -OnePlanet Librarian",
+    logo: ""
   });
   return (
     <Dropdown
@@ -40,7 +40,7 @@ export const CompaniesDropdown = () => {
               {company.location}
             </span>
           </div>
-          <BottomIcon />
+          
         </div>
       </DropdownTrigger>
       <DropdownMenu
@@ -80,48 +80,16 @@ export const CompaniesDropdown = () => {
           <DropdownItem
             key="1"
             startContent={<AcmeIcon />}
-            description="San Fransico, CA"
+            description={`Check out ${company.name}'s website !`}
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }}
           >
-            Facebook
+            Website
           </DropdownItem>
-          <DropdownItem
-            key="2"
-            startContent={<AcmeLogo />}
-            description="Austin, Tx"
-            classNames={{
-              base: "py-4",
-              title: "text-base font-semibold",
-            }}
-          >
-            Instagram
-          </DropdownItem>
-          <DropdownItem
-            key="3"
-            startContent={<AcmeIcon />}
-            description="Brooklyn, NY"
-            classNames={{
-              base: "py-4",
-              title: "text-base font-semibold",
-            }}
-          >
-            Twitter
-          </DropdownItem>
-          <DropdownItem
-            key="4"
-            startContent={<AcmeIcon />}
-            description="Palo Alto, CA"
-            classNames={{
-              base: "py-4",
-              title: "text-base font-semibold",
-            }}
-          >
-            Acme Co.
-          </DropdownItem>
-        </DropdownSection>
+         
+          </DropdownSection>
       </DropdownMenu>
     </Dropdown>
   );
